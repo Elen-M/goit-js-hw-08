@@ -4,13 +4,17 @@
 
 body {
     margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-color: #f8f9fa;
 }
 
 .gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
     width: 90%;
     max-width: 1440px;
-    padding: 24px;
     display: flex;
     flex-wrap: wrap;
     gap: 24px;
@@ -19,6 +23,8 @@ body {
     background-color: #fff;
     list-style: none;
     margin: 0;
+    padding-top: 24px;
+    padding-bottom: 24px;
 }
 
 .gallery-item {
